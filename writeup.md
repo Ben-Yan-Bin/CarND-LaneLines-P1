@@ -23,7 +23,14 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 6 steps:
+* turn the image into gray scale
+* add Gaussian Blur
+* use Canny to calculate the edges
+* mask the image with region of interest
+* use hough_lines() function to get all lines, do average and extrapolate the lines in draw_lines() function
+* combo the lines with orignal image
+
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
